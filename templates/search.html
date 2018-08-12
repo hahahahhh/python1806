@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+</head>
+<body>
+<form action="{% url 'app:search' %}" method="post">
+    {% csrf_token %}
+    <span>查询：</span> <input type="text" name="searchfield" placeholder="请输入关键字"><input type="submit">
+</form>
+</body>
+</html>
